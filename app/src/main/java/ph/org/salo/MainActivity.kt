@@ -170,7 +170,7 @@ class MainActivity : Activity() {
         head.addView(label("SALO", 27f, pine, true))
         head.addView(block("Climate planning, made simple", 13f, muted))
         shell.addView(head)
-        val scroll = ScrollView(this).apply { fillViewport=true; isVerticalScrollBarEnabled=false }
+        val scroll = ScrollView(this).apply { isFillViewport=true; isVerticalScrollBarEnabled=false }
         content = stack().apply { setPadding(dp(18),dp(2),dp(18),dp(16)) }
         scroll.addView(content)
         shell.addView(scroll,LinearLayout.LayoutParams(-1,0,1f))
